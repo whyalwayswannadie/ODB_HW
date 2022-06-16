@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EFDBModelStoreContainer" CdmEntityContainer="HWEntities2">
+    <EntitySetMapping Name="Broker">
+      <EntityTypeMapping TypeName="EFDBModel.Broker">
+        <MappingFragment StoreEntitySet="Broker">
+          <ScalarProperty Name="BrokerID" ColumnName="BrokerID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BrokerageCompany">
+      <EntityTypeMapping TypeName="EFDBModel.BrokerageCompany">
+        <MappingFragment StoreEntitySet="BrokerageCompany">
+          <ScalarProperty Name="BrokerageCompanyID" ColumnName="BrokerageCompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Consignment">
+      <EntityTypeMapping TypeName="EFDBModel.Consignment">
+        <MappingFragment StoreEntitySet="Consignment">
+          <ScalarProperty Name="ConsignmentID" ColumnName="ConsignmentID" />
+          <ScalarProperty Name="BrokerID" ColumnName="BrokerID" />
+          <ScalarProperty Name="BrokerageCompanyID" ColumnName="BrokerageCompanyID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="QuantityOfUnits" ColumnName="QuantityOfUnits" />
+          <ScalarProperty Name="DeliveryCondition" ColumnName="DeliveryCondition" />
+          <ScalarProperty Name="ShippingDate" ColumnName="ShippingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Firm">
+      <EntityTypeMapping TypeName="EFDBModel.Firm">
+        <MappingFragment StoreEntitySet="Firm">
+          <ScalarProperty Name="FirmID" ColumnName="FirmID" />
+          <ScalarProperty Name="FirmName" ColumnName="FirmName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="EFDBModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="FirmID" ColumnName="FirmID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="GuaranteePeriod" ColumnName="GuaranteePeriod" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="DateManufacture" ColumnName="DateManufacture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

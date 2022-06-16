@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HWModelStoreContainer" CdmEntityContainer="HWDBEntities">
+    <EntitySetMapping Name="Firm">
+      <EntityTypeMapping TypeName="HWModel.Firm">
+        <MappingFragment StoreEntitySet="Firm">
+          <ScalarProperty Name="FirmID" ColumnName="FirmID" />
+          <ScalarProperty Name="FirmName" ColumnName="FirmName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
